@@ -15,11 +15,14 @@ COPY requirements.txt .
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application code
-COPY . .
+# copy just model download script
+COPY download_model.py .
 
 # Download model
 RUN python download_model.py
+
+# Copy application code
+COPY . .
 
 # Expose port
 EXPOSE 8000
