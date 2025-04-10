@@ -1,34 +1,46 @@
-# Python
+# Python artifacts
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+*.egg-info/
 
-# Virtual Environment
+# Virtual environments
 venv/
 env/
 ENV/
 
-# IDE
+# IDE and editor settings
 .vscode/
 .idea/
-
-# Unit test / coverage reports
-htmlcov/
-.coverage
-.pytest_cache/
 
 # Logs
 *.log
 
-# Local development
+# Local environment and secrets
 .env
+
+# Git
 .git
 .gitignore
 
-# Documentation
-*.md
-docs/
+# Unit test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
 
 # Cache
 .cache/
 .mypy_cache/
+
+# Docs
+docs/
+*.md
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
