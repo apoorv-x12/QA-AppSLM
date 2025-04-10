@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.pytest_cache/
+
+# Logs
+*.log
+
+# Local development
+.env
+.git
+.gitignore
+
+# Documentation
+*.md
+docs/
+
+# Cache
+.cache/
+.mypy_cache/
