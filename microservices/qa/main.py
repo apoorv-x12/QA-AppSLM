@@ -31,3 +31,7 @@ async def question_answer(request: QARequest):
         answer=result['answer'],
         score=result['score'],
     )
+
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
