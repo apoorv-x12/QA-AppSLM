@@ -14,7 +14,7 @@ class QAResponse(BaseModel):
 async def question_answer(request: QARequest):
     """
     Answer a question
-    
+
     Args:
         request: QARequest containing question 
         
