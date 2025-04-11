@@ -6,6 +6,7 @@ app = FastAPI(title="Question Answering API")
 class QARequest(BaseModel):
     question: str
 
+
 class QAResponse(BaseModel):
     answer: str
     score: float
