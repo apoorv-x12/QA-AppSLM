@@ -27,5 +27,5 @@ jobs:
         TAG=$(date +%s)
 
         cd microservices/qa
-        docker build -f microservices/qa/Dockerfile -t $IMAGE_NAME:$TAG .
+        docker build -f Dockerfile -t $IMAGE_NAME:$TAG .
         docker push $IMAGE_NAME:$TAG
