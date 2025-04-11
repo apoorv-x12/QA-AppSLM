@@ -26,5 +26,6 @@ jobs:
         IMAGE_NAME=${{ secrets.DOCKER_USERNAME }}/qa-service
         TAG=$(date +%s)
 
-        docker build -f microservices/qa/Dockerfile -t $IMAGE_NAME:$TAG .
+        cd microservices/qa
+        docker build -t $IMAGE_NAME:$TAG .
         docker push $IMAGE_NAME:$TAG
