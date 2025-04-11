@@ -23,22 +23,11 @@ jobs:
 
       - name: Build and Push Docker image for QA service
         run: |
-          # Debug: Show current directory and contents
-          pwd
-          ls -la
-
-          # Debug: Show microservices/qa contents
-          ls -la microservices/qa
-
           IMAGE_NAME=${{ secrets.DOCKER_USERNAME }}/qa-service
           TAG=$(date +%s)
 
           # Change to the correct directory
           cd microservices/qa
-
-          # Debug: Verify we're in the right place
-          pwd
-          ls -la
 
           # Build and push
           docker build -t $IMAGE_NAME:$TAG .
