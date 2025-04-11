@@ -2,7 +2,6 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from model import qa
 
-
 app = FastAPI(title="Question Answering API")
 class QARequest(BaseModel):
     question: str
