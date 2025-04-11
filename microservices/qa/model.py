@@ -9,7 +9,7 @@ def qa(question: str):
 
     context = """
     Paris is the capital and most populous city of France, with an estimated population of 2.2 million in 2020.
-    It is the center of the Île-de-France region, and the seat of government of France.
+    It is  the center of the Île-de-France region, and the seat of government of France.
     """
 
     return qa_pipeline({
